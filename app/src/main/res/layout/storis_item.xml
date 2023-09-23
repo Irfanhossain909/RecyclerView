@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#97CED5"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storyImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/story1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <TextView
+            android:id="@+id/storyTitle"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Forgotten Journal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/storyImage"
+            app:layout_constraintTop_toTopOf="@+id/storyImage" />
+
+        <TextView
+            android:id="@+id/storyDerails"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="24dp"
+            android:lines="2"
+            android:text="In a small attic tucked away in an old, dusty house, Sarah discovered a forgotten journal. The house had belonged to her grandmother, and as she sorted through the attic's clutter, the journal caught her eye."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/storyTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/storyTitle"
+            app:layout_constraintTop_toBottomOf="@+id/storyTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
