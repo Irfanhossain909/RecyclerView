@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.storyRecycle.layoutManager = LinearLayoutManager(this)
         val storyList = listOf<storyModel>(
+            storyModel("The Forgotten Journal",resources.getString(R.string.story1),R.drawable.story1),
+            storyModel("The Forgotten Journal",resources.getString(R.string.story1),R.drawable.story1),
             storyModel("The Forgotten Journal",resources.getString(R.string.story1),R.drawable.story1)
         )
         binding.storyRecycle.adapter = storyAdapter(storyList){
